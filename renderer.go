@@ -413,7 +413,8 @@ func (r *renderer) RenderNode(w io.Writer, node ast.Node, entering bool) ast.Wal
 		return ast.SkipChildren
 
 	default:
-		panic(fmt.Sprintf("Unknown node type %T", node))
+		// unknown node type: skip rather than panic, so callers
+		// are not forced to crash when the upstream AST gains new types
 	}
 
 	return ast.GoToNext
@@ -969,5 +970,6 @@ func shouldCleanText(node ast.Node) bool {
 		node = node.GetParent()
 	}
 
-	panic("bad markdown document or missing case")
+	// default to cleaning text rather than panicking on new AST node types
+	return true
 }
