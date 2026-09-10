@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	path := "Readme.md"
+	path := "README.md"
 	source, err := os.ReadFile(path)
 	if err != nil {
 		panic(err)
