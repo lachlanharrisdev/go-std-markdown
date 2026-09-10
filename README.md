@@ -1,7 +1,6 @@
 # go-std-markdown
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/lachlanharrisdev/go-std-markdown.svg)](https://pkg.go.dev/github.com/lachlanharrisdev/go-std-markdown)
-[![Go Report Card](https://goreportcard.com/badge/github.com/lachlanharrisdev/go-std-markdown)](https://goreportcard.com/report/github.com/lachlanharrisdev/go-std-markdown)
 [![codecov](https://codecov.io/gh/lachlanharrisdev/go-std-markdown/branch/main/graph/badge.svg)](https://codecov.io/gh/lachlanharrisdev/go-std-markdown)
 [![GitHub license](https://img.shields.io/github/license/lachlanharrisdev/go-std-markdown.svg)](https://github.com/lachlanharrisdev/go-std-markdown/blob/main/LICENSE)
 
