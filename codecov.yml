@@ -29,9 +29,5 @@ parsers:
     partials_as_hits: true
 
 ignore:
-  - "debug"
-  - "misc"
-  - "fuzzing"
-  - "testdata_media"
-  - "testdata_source"
-  - "testdata_result"
+  - "internal/debug"
+  - "testdata"

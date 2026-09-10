@@ -15,18 +15,19 @@ import (
 func TestRender(t *testing.T) {
 	color.NoColor = false
 
-	sourcepath := "testdata_source/"
-	resultpath := "testdata_result/"
+	sourcepath := "testdata/source/"
+	resultpath := "testdata/result/"
 
 	err := filepath.Walk(sourcepath, func(fullpath string, info os.FileInfo, err error) error {
 		require.NoError(t, err)
 
-		if info.IsDir() {
+		_, file := filepath.Split(fullpath)
+
+		if info.IsDir() || !strings.HasSuffix(file, ".md") {
 			return nil
 		}
 
-		_, file := filepath.Split(fullpath)
-		name := strings.TrimRight(file, ".md")
+		name := strings.TrimSuffix(file, ".md")
 
 		t.Run(name, func(t *testing.T) {
 			source, err := os.ReadFile(path.Join(sourcepath, name+".md"))
@@ -53,18 +54,19 @@ func Test__DoRender(t *testing.T) {
 
 	color.NoColor = false
 
-	sourcepath := "testdata_source/"
-	resultpath := "testdata_result/"
+	sourcepath := "testdata/source/"
+	resultpath := "testdata/result/"
 
 	err := filepath.Walk(sourcepath, func(fullpath string, info os.FileInfo, err error) error {
 		require.NoError(t, err)
 
-		if info.IsDir() {
+		_, file := filepath.Split(fullpath)
+
+		if info.IsDir() || !strings.HasSuffix(file, ".md") {
 			return nil
 		}
 
-		_, file := filepath.Split(fullpath)
-		name := strings.TrimRight(file, ".md")
+		name := strings.TrimSuffix(file, ".md")
 
 		// if name != "Ordered and unordered lists" {
 		// 	return nil
