@@ -298,7 +298,9 @@ func (r *renderer) RenderNode(w io.Writer, node ast.Node, entering bool) ast.Wal
 	case *ast.Link:
 		if entering {
 			r.inlineAccumulator.WriteString("[")
-			r.inlineAccumulator.WriteString(string(ast.GetFirstChild(node).AsLeaf().Literal))
+			if child := ast.GetFirstChild(node); child != nil {
+				r.inlineAccumulator.WriteString(string(child.AsLeaf().Literal))
+			}
 			r.inlineAccumulator.WriteString("](")
 			r.inlineAccumulator.WriteString(Blue(string(node.Destination)))
 			if len(node.Title) > 0 {
