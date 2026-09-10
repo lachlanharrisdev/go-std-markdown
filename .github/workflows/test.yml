@@ -5,22 +5,53 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  schedule:
+    - cron: "15 0 * * 1"
+
+permissions:
+  contents: read
 
 jobs:
   test:
+    name: test (go ${{ matrix.go }})
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
-        go: ["1.27"]
+        go: ["1.25.x", "1.27.x"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
         with:
           go-version: ${{ matrix.go }}
-      - run: go build ./...
-      - run: go vet ./...
-      - run: go test -v -race -coverprofile=coverage.txt ./...
-      - name: Upload coverage reports to Codecov
+          cache: true
+      - name: Build
+        run: go build ./...
+      - name: Vet
+        run: go vet ./...
+      - name: Test
+        run: go test -race -coverprofile=coverage.txt ./...
+      - name: Upload coverage to Codecov
+        if: matrix.go == '1.27.x'
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+
+  check-deps:
+    name: dependency check (tidy + vuln)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.25.x"
+          cache: true
+      - name: go.mod tidy and Go 1.25 compatible
+        run: |
+          go mod tidy -compat=1.25.0
+          git diff --exit-code go.mod go.sum
+      - name: govulncheck
+        uses: golang/govulncheck-action@v1
+        with:
+          go-version-input: "1.27.x"
+          go-package: "./..."

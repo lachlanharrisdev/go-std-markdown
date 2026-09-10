@@ -8,3 +8,10 @@ updates:
     time: "15:00"
     day: monday
   open-pull-requests-limit: 10
+- package-ecosystem: github-actions
+  directory: "/"
+  schedule:
+    interval: weekly
+    timezone: Australia/Sydney
+    time: "15:00"
+    day: monday
