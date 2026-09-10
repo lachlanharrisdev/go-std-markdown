@@ -3,7 +3,6 @@
     Foo [bar]([34m/url/[0m Title).
 
     Foo [bar]([34m/url/[0m Title).
-
     With [embedded [brackets]]([34m/url/[0m).
 
     Indented [once]([34m/url[0m).
@@ -13,8 +12,7 @@
     Indented [thrice]([34m/url[0m).
 
     Indented [four][] times.
-
-    [32;1m┃ [0m[four]: /url
+    [32;1m┃ [0;22m[four]: /url
 
     ────────────────────────────────────
 
@@ -45,7 +43,6 @@
 
     Backslashing should suppress [this]
     and [this].
-
     ────────────────────────────────────
 
     Here's one where the [link

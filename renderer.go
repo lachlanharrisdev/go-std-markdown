@@ -12,7 +12,7 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/MichaelMure/go-term-text"
+	text "github.com/MichaelMure/go-term-text"
 	"github.com/alecthomas/chroma"
 	"github.com/alecthomas/chroma/formatters"
 	"github.com/alecthomas/chroma/lexers"
@@ -24,7 +24,7 @@ import (
 	"github.com/kyokomi/emoji/v2"
 	"golang.org/x/net/html"
 
-	htmlWalker "github.com/MichaelMure/go-term-markdown/html"
+	htmlWalker "github.com/lachlanharrisdev/go-std-markdown/html"
 )
 
 /*
@@ -127,7 +127,7 @@ type renderer struct {
 	table *tableRenderer
 }
 
-/// NewRenderer creates a new instance of the console renderer
+// / NewRenderer creates a new instance of the console renderer
 func NewRenderer(lineWidth int, leftPad int, opts ...Options) *renderer {
 	r := &renderer{
 		lineWidth:       lineWidth,
@@ -413,6 +413,11 @@ func (r *renderer) RenderNode(w io.Writer, node ast.Node, entering bool) ast.Wal
 		if _, ok := node.Parent.(*ast.TableFooter); ok && entering {
 			r.table.NextBodyRow()
 		}
+
+	case *ast.ReferenceDefinition:
+		// link reference definitions are not rendered, they only
+		// exist to resolve [label] references
+		return ast.SkipChildren
 
 	default:
 		panic(fmt.Sprintf("Unknown node type %T", node))

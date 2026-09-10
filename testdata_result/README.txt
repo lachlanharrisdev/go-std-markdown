@@ -2,34 +2,19 @@
     [34mre/git-bug/master/misc/logo/logo-alp[0m
     [34m          ha-flat-bg.svg[0m)
 
-    [32;1m1 git-bug[0m
+    [32;1m1 git-bug[0;22m
     ────────────────────────────────────
 
-    [![Build Status](https://travis-ci.o
-    rg/MichaelMure/git-bug.svg?branch=ma
-    ster)](https://travis-ci.org/Michael
-    Mure/git-bug)[![Backers on Open Coll
-    ective](https://opencollective.com/g
-    it-bug/backers/badge.svg)](#backers)
-    [![Sponsors on Open Collective](htt
-    ps://opencollective.com/git-bug/spon
-        sors/badge.svg)](#sponsors)
-    [![License: GPL v3](https://img.shie
-    lds.io/badge/License-GPLv3+-blue.svg
-    )](http://www.gnu.org/licenses/gpl-3
-    .0)[![GoDoc](https://godoc.org/githu
-    b.com/MichaelMure/git-bug?status.svg
-    )](https://godoc.org/github.com/Mich
-    aelMure/git-bug)[![Go Report Card](h
-    ttps://goreportcard.com/badge/github
-    .com/MichaelMure/git-bug)](https://g
-    oreportcard.com/report/github.com/Mi
-    chaelMure/git-bug)[![Gitter chat](ht
-    tps://badges.gitter.im/gitterHQ/gitt
-    er.png)](https://gitter.im/the-git-b
-                 ug/Lobby)
+    []([34mhttps://travis-ci.org/MichaelMure[0m
+    [34m/git-bug[0m)[]([34m#backers[0m) []([34m#sponsors[0m)
+    []([34mhttp://www.gnu.org/licenses/gpl-3[0m
+    [34m.0[0m)[]([34mhttps://godoc.org/github.com/M[0m
+    [34michaelMure/git-bug[0m)[]([34mhttps://gorepo[0m
+    [34mrtcard.com/report/github.com/Michael[0m
+    [34mMure/git-bug[0m)[]([34mhttps://gitter.im/th[0m
+    [34me-git-bug/Lobby[0m)
 
-    [44;3mgit-bug[0m is a bug tracker that:
+    [44;3mgit-bug[0;23m is a bug tracker that:
     [32m• [0m[1mfully embed in git[0m: you only need
       your git repository to have a bug
       tracker
@@ -61,53 +46,100 @@
     Expect dragons and unfinished
     business. 🚧
 
-    [32;1m1.1 Install[0m
+    [32;1m1.1 Install[0;22m
 
-    [31m<details>[0m[31m<summary>[0mgo get[31m</summary>[0m
+    [31m<details><summary>go[0m
+    [31mget</summary>```shell[0m
+    [31mgo get -u[0m
+    [31mgithub.com/MichaelMure/git-bug[0m
+    [31m```
+[0m
+    [31mIf it's not done already, add golang[0m
+    [31mbinary directory in your PATH:
+[0m
+    [31m```bash[0m
+    [31mexport PATH=$PATH:$(go env[0m
+    [31mGOROOT)/bin:$(go env GOPATH)/bin[0m
+    [31m```</details>[0m[31m<summary>go[0m
+    [31mget</summary>[0mgo get[31m<summary>go[0m
+    [31mget</summary>[0m```shellgo get -u
+    github.com/MichaelMure/git-bug```If
+    it's not done already, add golang
+    binary directory in your
+    PATH:```bashexport PATH=$PATH:$(go
+    env GOROOT)/bin:$(go env
+    GOPATH)/bin```[31m<details><summary>go[0m
+    [31mget</summary>```shell[0m
+    [31mgo get -u[0m
+    [31mgithub.com/MichaelMure/git-bug[0m
+    [31m```
+[0m
+    [31mIf it's not done already, add golang[0m
+    [31mbinary directory in your PATH:
+[0m
+    [31m```bash[0m
+    [31mexport PATH=$PATH:$(go env[0m
+    [31mGOROOT)/bin:$(go env GOPATH)/bin[0m
+    [31m```</details>[0m
 
-    [32;1m┃ [0mgo get -u
-    [32;1m┃ [0mgithub.com/MichaelMure/git-bug
+    [31m<details><summary>Pre-compiled[0m
+    [31mbinaries</summary>1. Go to the[0m
+    [31m[release page](https://github.com/Mi[0m
+    [31mchaelMure/git-bug/releases/latest)[0m
+    [31mand download the appropriate binary[0m
+    [31mfor your system.[0m
+    [31m2. Copy the binary anywhere in your[0m
+    [31mPATH[0m
+    [31m3. Rename the binary to `git-bug`[0m
+    [31m(or `git-bug.exe` on windows)
+[0m
+    [31mThat's all[0m
+    [31m!</details>[0m[31m<summary>Pre-compiled[0m
+    [31mbinaries</summary>[0mPre-compiled
+    binaries[31m<summary>Pre-compiled[0m
+    [31mbinaries</summary>[0m1. Go to the
+    [release page](https://github.com/Mi
+    chaelMure/git-bug/releases/latest)
+    and download the appropriate binary
+    for your system.2. Copy the binary
+    anywhere in your PATH3. Rename the
+    binary to `git-bug` (or
+    `git-bug.exe` on windows)That's all
+    ![31m<details><summary>Pre-compiled[0m
+    [31mbinaries</summary>1. Go to the[0m
+    [31m[release page](https://github.com/Mi[0m
+    [31mchaelMure/git-bug/releases/latest)[0m
+    [31mand download the appropriate binary[0m
+    [31mfor your system.[0m
+    [31m2. Copy the binary anywhere in your[0m
+    [31mPATH[0m
+    [31m3. Rename the binary to `git-bug`[0m
+    [31m(or `git-bug.exe` on windows)
+[0m
+    [31mThat's all !</details>[0m
 
-    If it's not done already, add golang
-    binary directory in your PATH:
+    [31m<details><summary>Linux[0m
+    [31mpackages</summary>* [Archlinux (AUR)[0m
+    [31m](https://aur.archlinux.org/packages[0m
+    [31m/?K=git-bug)</details>[0m[31m<summary>Linux[0m
+    [31mpackages</summary>[0mLinux
+    packages[31m<summary>Linux[0m
+    [31mpackages</summary>[0m* [Archlinux (AUR)
+    ](https://aur.archlinux.org/packages
+    /?K=git-bug)[31m<details><summary>Linux[0m
+    [31mpackages</summary>* [Archlinux (AUR)[0m
+    [31m](https://aur.archlinux.org/packages[0m
+    [31m/?K=git-bug)</details>[0m
 
-    [32;1m┃ [0m[32mexport[0m [34mPATH[0m[90m=[0m[34m$PATH[0m:[1m[32m$([0mgo env
-    [32;1m┃ [0mGOROOT[1m[32m)[0m/bin:[1m[32m$([0mgo env GOPATH[1m[32m)[0m/bin
-
-    [31m</details>[0m
-
-    [31m<details>[0m[31m<summary>[0mPre-compiled
-    binaries[31m</summary>[0m
-    [32m1. [0mGo to the [release page]([34mhttps://[0m
-       [34mgithub.com/MichaelMure/git-bug/re[0m
-       [34mleases/latest[0m) and download the
-       appropriate binary for your
-       system.
-    [32m2. [0mCopy the binary anywhere in your
-       PATH
-    [32m3. [0mRename the binary to [44;3mgit-bug[0m (or
-       [44;3mgit-bug.exe[0m on windows)
-
-    That's all !
-
-    [31m</details>[0m
-
-    [31m<details>[0m[31m<summary>[0mLinux
-    packages[31m</summary>[0m
-    [32m• [0m[Archlinux (AUR)]([34mhttps://aur.arch[0m
-      [34mlinux.org/packages/?K=git-bug[0m)
-
-    [31m</details>[0m
-
-    [32;1m1.2 CLI usage[0m
+    [32;1m1.2 CLI usage[0;22m
 
     Create a new identity:
 
-    [32;1m┃ [0mgit bug user create
+    [32;1m┃ [0;22mgit bug user create
 
     Create a new bug:
 
-    [32;1m┃ [0mgit bug add
+    [32;1m┃ [0;22mgit bug add
 
     Your favorite editor will open to
     write a title and a message.
@@ -115,34 +147,34 @@
     You can push your new entry to a
     remote:
 
-    [32;1m┃ [0mgit bug push [<remote>]
+    [32;1m┃ [0;22mgit bug push [<remote>]
 
     And pull for updates:
 
-    [32;1m┃ [0mgit bug pull [<remote>]
+    [32;1m┃ [0;22mgit bug pull [<remote>]
 
     List existing bugs:
 
-    [32;1m┃ [0mgit bug ls
+    [32;1m┃ [0;22mgit bug ls
 
     Filter and sort bugs using a
     [query]([34mdoc/queries.md[0m):
 
-    [32;1m┃ [0mgit bug ls "status:open sort:edit"
+    [32;1m┃ [0;22mgit bug ls "status:open sort:edit"
 
-    You can now use commands like [44;3mshow[0m,
-    [44;3mcomment[0m, [44;3mopen[0m or [44;3mclose[0m to display
+    You can now use commands like [44;3mshow[0;23m,
+    [44;3mcomment[0;23m, [44;3mopen[0;23m or [44;3mclose[0;23m to display
     and modify bugs. For more details
     about each command, you can run [44;3mgit[0m
-    [3;44mbug <command> --help[0m or read the
+    [3;44mbug <command> --help[0;23m or read the
     [command's
     documentation]([34mdoc/md/git-bug.md[0m).
 
-    [32;1m1.3 Interactive terminal UI[0m
+    [32;1m1.3 Interactive terminal UI[0;22m
 
     An interactive terminal UI is
     available using the command [44;3mgit bug[0m
-    [3;44mtermui[0m to browse and edit bugs.
+    [3;44mtermui[0;23m to browse and edit bugs.
 
 
     [48;2;29;29;28m[38;2;28;28;28m▄[48;2;29;29;28m[38;2;28;28;28m▄[48;2;29;29;28m[38;2;28;28;28m▄[48;2;29;29;28m[38;2;28;28;28m▄[48;2;28;28;28m[38;2;28;28;28m▄[48;2;28;28;29m[38;2;28;28;28m▄[48;2;28;28;28m[38;2;28;28;28m▄[48;2;28;28;29m[38;2;28;28;28m▄[48;2;28;28;29m[38;2;28;28;28m▄[48;2;28;28;29m[38;2;28;28;28m▄[48;2;28;29;29m[38;2;28;28;28m▄[48;2;28;28;29m[38;2;28;28;28m▄[48;2;28;28;29m[38;2;28;28;28m▄[48;2;28;28;29m[38;2;28;28;28m▄[48;2;28;28;29m[38;2;28;28;28m▄[48;2;28;28;29m[38;2;28;28;28m▄[48;2;28;28;29m[38;2;28;28;28m▄[48;2;29;28;28m[38;2;28;28;28m▄[48;2;29;28;28m[38;2;28;28;28m▄[48;2;28;29;29m[38;2;28;28;28m▄[48;2;28;28;28m[38;2;28;28;28m▄[48;2;28;28;28m[38;2;28;28;28m▄[48;2;28;28;28m[38;2;28;28;28m▄[48;2;28;28;28m[38;2;28;28;28m▄[48;2;28;28;28m[38;2;28;28;28m▄[48;2;28;28;28m[38;2;28;28;28m▄[48;2;28;28;28m[38;2;28;28;28m▄[48;2;28;28;28m[38;2;28;28;28m▄[48;2;28;28;28m[38;2;28;28;28m▄[48;2;28;28;28m[38;2;28;28;28m▄[48;2;28;28;28m[38;2;28;28;28m▄[48;2;28;28;28m[38;2;28;28;28m▄[48;2;28;28;28m[38;2;28;28;28m▄[48;2;28;28;28m[38;2;28;28;28m▄[48;2;28;28;28m[38;2;28;28;28m▄[48;2;28;28;28m[38;2;28;28;28m▄[0m
@@ -157,10 +189,10 @@
 
 
 
-    [32;1m1.4 Web UI (status: WIP)[0m
+    [32;1m1.4 Web UI (status: WIP)[0;22m
 
     You can launch a rich Web UI with
-    [44;3mgit bug webui[0m.
+    [44;3mgit bug webui[0;23m.
 
 
     [48;2;75;94;179m[38;2;231;232;237m▄[48;2;80;98;180m[38;2;229;230;236m▄[48;2;75;93;178m[38;2;230;231;236m▄[48;2;81;98;181m[38;2;229;230;236m▄[48;2;78;96;179m[38;2;229;230;236m▄[48;2;76;94;179m[38;2;230;231;236m▄[48;2;77;95;179m[38;2;229;231;236m▄[48;2;73;92;178m[38;2;232;233;238m▄[48;2;73;91;177m[38;2;233;234;239m▄[48;2;73;91;177m[38;2;233;234;239m▄[48;2;73;91;177m[38;2;233;234;239m▄[48;2;73;92;177m[38;2;232;233;238m▄[48;2;73;91;177m[38;2;234;235;240m▄[48;2;73;91;177m[38;2;233;234;239m▄[48;2;73;92;177m[38;2;232;233;238m▄[48;2;73;91;177m[38;2;234;235;239m▄[48;2;73;91;177m[38;2;233;234;239m▄[48;2;73;91;177m[38;2;233;234;239m▄[48;2;73;92;177m[38;2;232;233;238m▄[48;2;73;91;177m[38;2;233;234;239m▄[48;2;73;91;177m[38;2;233;234;239m▄[48;2;73;91;177m[38;2;233;234;238m▄[48;2;73;91;177m[38;2;233;234;239m▄[48;2;73;91;177m[38;2;233;234;239m▄[48;2;73;92;177m[38;2;232;233;238m▄[48;2;72;91;176m[38;2;237;235;246m▄[48;2;72;91;176m[38;2;238;236;247m▄[48;2;72;91;176m[38;2;236;235;245m▄[48;2;74;92;178m[38;2;230;231;236m▄[48;2;74;92;178m[38;2;230;231;236m▄[48;2;74;92;178m[38;2;230;231;236m▄[48;2;74;92;178m[38;2;230;231;236m▄[48;2;74;92;178m[38;2;230;231;236m▄[48;2;74;92;178m[38;2;230;231;236m▄[48;2;74;92;178m[38;2;230;231;236m▄[48;2;74;92;178m[38;2;230;232;236m▄[0m
@@ -214,14 +246,14 @@
     through a GraphQL API. The schema is
     available [here]([34mgraphql/[0m).
 
-    [32;1m1.5 Bridges[0m
+    [32;1m1.5 Bridges[0;22m
 
     [92m1.5.1 Importer implementations[0m
 
     ┌─────────────────┬──────┬─────────┐
     │                 │Github│Launchpad│
     ╞═════════════════╪══════╪═════════╡
-    │[1mincremental[0m[31m<br/>[0m(│✔️    │   ❌    │
+    │[1mincremental[0m[31m<br/>[0m(│✔️     │   ❌    │
     │can import more  │      │         │
     │than once)       │      │         │
     ├─────────────────┼──────┼─────────┤
@@ -229,21 +261,21 @@
     │download only new│      │         │
     │data)            │      │         │
     ├─────────────────┼──────┼─────────┤
-    │[1midentities[0m       │✔️    │   ✔️    │
+    │[1midentities[0m       │✔️     │    ✔️    │
     ├─────────────────┼──────┼─────────┤
     │identities update│❌    │   ❌    │
     ├─────────────────┼──────┼─────────┤
-    │[1mbug[0m              │✔️    │   ✔️    │
+    │[1mbug[0m              │✔️     │    ✔️    │
     ├─────────────────┼──────┼─────────┤
-    │comments         │✔️    │   ✔️    │
+    │comments         │✔️     │    ✔️    │
     ├─────────────────┼──────┼─────────┤
-    │comment editions │✔️    │   ❌    │
+    │comment editions │✔️     │   ❌    │
     ├─────────────────┼──────┼─────────┤
-    │labels           │✔️    │   ❌    │
+    │labels           │✔️     │   ❌    │
     ├─────────────────┼──────┼─────────┤
-    │status           │✔️    │   ❌    │
+    │status           │✔️     │   ❌    │
     ├─────────────────┼──────┼─────────┤
-    │title edition    │✔️    │   ❌    │
+    │title edition    │✔️     │   ❌    │
     ├─────────────────┼──────┼─────────┤
     │[1mautomated test[0m   │❌    │   ❌    │
     │[1msuite[0m            │      │         │
@@ -252,7 +284,7 @@
 
     Todo !
 
-    [32;1m1.6 Internals[0m
+    [32;1m1.6 Internals[0;22m
 
     Interested by how it works ? Have a
     look at the [data
@@ -260,7 +292,7 @@
     [internal
     bird-view]([34mdoc/architecture.md[0m).
 
-    [32;1m1.7 Misc[0m
+    [32;1m1.7 Misc[0;22m
 
     [32m• [0m[Bash completion]([34m../misc/bash_com[0m
       [34mpletion[0m)
@@ -268,7 +300,7 @@
       [34metion[0m)
     [32m• [0m[ManPages]([34mdoc/man[0m)
 
-    [32;1m1.8 Planned features[0m
+    [32;1m1.8 Planned features[0;22m
 
     [32m• [0mmedia embedding
     [32m• [0mexporter to github issue
@@ -276,7 +308,7 @@
       arbitrary bug tracker
     [32m• [0minflatable raptor
 
-    [32;1m1.9 Contribute[0m
+    [32;1m1.9 Contribute[0;22m
 
     PRs accepted. Drop by the [Gitter lo
     bby]([34mhttps://gitter.im/the-git-bug/L[0m
@@ -289,26 +321,26 @@
     "git clone". Instead, one should
     use:
 
-    [32;1m┃ [0mgo get -u
-    [32;1m┃ [0mgithub.com/MichaelMure/git-bug
+    [32;1m┃ [0;22mgo get -u
+    [32;1m┃ [0;22mgithub.com/MichaelMure/git-bug
 
     The git repository will then be
     available:
 
-    [32;1m┃ [0m[3m[36m# Note that $GOPATH defaults to[0m
-    [32;1m┃ [0m[3;36m$HOME/go[0m
-    [32;1m┃ [0m$ [32mcd[0m [34m$GOPATH[0m/src/github.com/Michae
-    [32;1m┃ [0mlMure/git-bug/
+    [32;1m┃ [0;22m[3m[36m# Note that $GOPATH defaults to[0m
+    [32;1m┃ [0;22m[3;36m$HOME/go[0m
+    [32;1m┃ [0;22m$ [32mcd[0m [34m$GOPATH[0m/src/github.com/Michae
+    [32;1m┃ [0;22mlMure/git-bug/
 
-    You can now run [44;3mmake[0m to build the
-    project, or [44;3mmake install[0m to install
-    the binary in [44;3m$GOPATH/bin/[0m.
+    You can now run [44;3mmake[0;23m to build the
+    project, or [44;3mmake install[0;23m to install
+    the binary in [44;3m$GOPATH/bin/[0;23m.
 
     To work on the web UI, have a look
     at [the dedicated
     Readme.]([34mwebui/Readme.md[0m)
 
-    [32;1m1.10 Contributors ❤️ [0m
+    [32;1m1.10 Contributors ❤️ [0;22m
 
     This project exists thanks to all
     the people who contribute. [31m<a href="[0m
@@ -318,7 +350,7 @@
     [31mtributors.svg?width=890&button=false[0m
     [31m" />[0m[31m</a>[0m
 
-    [32;1m1.11 Backers[0m
+    [32;1m1.11 Backers[0;22m
 
     Thank you to all our backers! 🙏
     [[Become a backer]([34mhttps://opencolle[0m
@@ -330,7 +362,7 @@
     [31mencollective.com/git-bug/tiers/backe[0m
     [31mr.svg?width=890">[0m[31m</a>[0m
 
-    [32;1m1.12 Sponsors[0m
+    [32;1m1.12 Sponsors[0;22m
 
     Support this project by becoming a
     sponsor. Your logo will show up here
@@ -384,7 +416,7 @@
     [31m="https://opencollective.com/git-bug[0m
     [31m/tiers/sponsor/9/avatar.svg">[0m[31m</a>[0m
 
-    [32;1m1.13 License[0m
+    [32;1m1.13 License[0;22m
 
     Unless otherwise stated, this
     project is released under the
