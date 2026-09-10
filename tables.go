@@ -334,17 +334,3 @@ func drawRow(w io.Writer, pad string, cells []tableCell, columnWidths []int, tru
 		_, _ = w.Write([]byte("\n"))
 	}
 }
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}

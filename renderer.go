@@ -155,13 +155,6 @@ func (r *renderer) popPad() {
 }
 
 func (r *renderer) RenderNode(w io.Writer, node ast.Node, entering bool) ast.WalkStatus {
-	// TODO: remove
-	// if node.AsLeaf() != nil {
-	// 	fmt.Printf("%T, %v (%s)\n", node, entering, string(node.AsLeaf().Literal))
-	// } else {
-	// 	fmt.Printf("%T, %v\n", node, entering)
-	// }
-
 	switch node := node.(type) {
 	case *ast.Document:
 		// Nothing to do
