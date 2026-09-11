@@ -24,7 +24,7 @@ import (
 	"github.com/kyokomi/emoji/v2"
 	"golang.org/x/net/html"
 
-	htmlWalker "github.com/lachlanharrisdev/go-std-markdown/html"
+	htmlWalker "github.com/lachlanharrisdev/go-term-markdown/html"
 )
 
 /*

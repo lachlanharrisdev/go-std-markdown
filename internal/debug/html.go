@@ -6,7 +6,7 @@ import (
 
 	"golang.org/x/net/html"
 
-	htmlWalker "github.com/lachlanharrisdev/go-std-markdown/html"
+	htmlWalker "github.com/lachlanharrisdev/go-term-markdown/html"
 )
 
 func HtmlAst2PlantUML(node *html.Node) {

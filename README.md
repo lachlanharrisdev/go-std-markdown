@@ -1,10 +1,10 @@
-# go-std-markdown
+# go-term-markdown
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/lachlanharrisdev/go-std-markdown.svg)](https://pkg.go.dev/github.com/lachlanharrisdev/go-std-markdown)
-[![codecov](https://codecov.io/gh/lachlanharrisdev/go-std-markdown/branch/main/graph/badge.svg)](https://codecov.io/gh/lachlanharrisdev/go-std-markdown)
-[![GitHub license](https://img.shields.io/github/license/lachlanharrisdev/go-std-markdown.svg)](https://github.com/lachlanharrisdev/go-std-markdown/blob/main/LICENSE)
+[![Go Reference](https://pkg.go.dev/badge/github.com/lachlanharrisdev/go-term-markdown.svg)](https://pkg.go.dev/github.com/lachlanharrisdev/go-term-markdown)
+[![codecov](https://codecov.io/gh/lachlanharrisdev/go-term-markdown/branch/main/graph/badge.svg)](https://codecov.io/gh/lachlanharrisdev/go-term-markdown)
+[![GitHub license](https://img.shields.io/github/license/lachlanharrisdev/go-term-markdown.svg)](https://github.com/lachlanharrisdev/go-term-markdown/blob/main/LICENSE)
 
-`go-std-markdown` is a go package implementing a Markdown renderer for the 
+`go-term-markdown` is a go package implementing a Markdown renderer for the 
 terminal.
 
 Note: Markdown being originally designed to render as HTML, rendering in a 
@@ -25,7 +25,7 @@ import (
 	"fmt"
 	"os"
 
-	markdown "github.com/lachlanharrisdev/go-std-markdown"
+	markdown "github.com/lachlanharrisdev/go-term-markdown"
 )
 
 func main() {

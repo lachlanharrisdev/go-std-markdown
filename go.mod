@@ -1,4 +1,4 @@
-module github.com/lachlanharrisdev/go-std-markdown
+module github.com/lachlanharrisdev/go-term-markdown
 
 go 1.25.0
 
